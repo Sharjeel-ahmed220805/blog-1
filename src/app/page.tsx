@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { posts } from '@/data/post';
+import { posts } from '@/data/posts';
 
 export default function PostsPage() {
   return (
