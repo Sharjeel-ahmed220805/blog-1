@@ -7,11 +7,10 @@ interface Comment {
 }
 
 interface CommentSectionProps {
-  postId: string;
-  comments: Comment[];
+  comments: Comment[]; // Removed postId
 }
 
-export default function CommentSection({ postId, comments: initialComments }: CommentSectionProps) {
+export default function CommentSection({ comments: initialComments }: CommentSectionProps) {
   const [comments, setComments] = useState<Comment[]>(initialComments);
   const [newComment, setNewComment] = useState('');
 
