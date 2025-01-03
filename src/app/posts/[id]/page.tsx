@@ -39,7 +39,7 @@ export default function Post({ params }: PageProps) {
         {renderParagraphs(post.description)}
       </div>
 
-      <CommentSection postId={post.id} comments={post.comments} />
+      <CommentSection comments={post.comments} />
       <AuthorCard />
     </div>
   );
