@@ -2,11 +2,11 @@ import { posts } from '@/data/posts';
 import CommentSection from '@/components/CommentSection';
 import AuthorCard from '@/components/AuthorCard';
 
-interface PageProps {
+interface PostProps {
   params: { id: string };
 }
 
-export default function Post({ params }: PageProps) {
+export default function Post({ params }: PostProps) {
   const { id } = params;
   const post = posts.find((p) => p.id === id);
 
