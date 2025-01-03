@@ -1,4 +1,4 @@
-import { posts } from '@/data/post';
+import { posts } from '@/data/posts';
 import CommentSection from '@/components/CommentSection';
 import AuthorCard from '@/components/AuthorCard';
 
